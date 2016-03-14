@@ -16,8 +16,7 @@
 @property (nonatomic, strong) NSMutableArray *keys;
 @property (nonatomic, strong) UITextField *searchText;
 @property (nonatomic, strong) NSMutableDictionary *searchResultDic;
-@property (nonatomic, strong) UIView *tableHeaderView;
-
+@property (nonatomic, strong) UIButton *but;
 @end
 
 @implementation WPHotCityViewController
@@ -45,15 +44,22 @@
     // Do any additional setup after loading the view.
     
     //3自定义背景
-    UIView *searchView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 40*(self.view.frame.size.height/568))];
+    UIView *searchView = [[UIView alloc] initWithFrame:CGRectMake(10, 64, self.view.frame.size.width, 40)];
     searchView.backgroundColor = [UIColor clearColor];
     
     UIImageView *searchBg = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bg"]];
-    searchBg.frame = CGRectMake(0, 0, searchView.frame.size.width, searchView.frame.size.height);
+    searchBg.frame = CGRectMake(0, 0, searchView.frame.size.width - 50, searchView.frame.size.height);
     [searchView addSubview:searchBg];
     
+    _but = [[UIButton alloc] initWithFrame:CGRectMake(265, 5, 40, 30)];
+    [_but setTitle:@"搜索" forState:UIControlStateNormal];
+    _but.titleLabel.font = [UIFont systemFontOfSize:15];
+    [_but setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [searchView addSubview:_but];
+    [_but addTarget:self action:@selector(reset) forControlEvents:UIControlEventTouchUpInside];
+    
     //搜索框
-    _searchText = [[UITextField alloc]initWithFrame:CGRectMake(30*(self.view.frame.size.width/320), 0, self.view.frame.size.width-30, searchView.frame.size.height)];
+    _searchText = [[UITextField alloc]initWithFrame:CGRectMake(25, 0, searchView.frame.size.width - 90, searchView.frame.size.height)];
     _searchText.backgroundColor = [UIColor clearColor];
     _searchText.font = [UIFont systemFontOfSize:13];
     _searchText.placeholder  = @"请输入城市名称或首字母查询";
@@ -125,7 +131,6 @@
             [_keys removeAllObjects];
             //按字母升序排列
             [_keys addObjectsFromArray:[[_citys allKeys] sortedArrayUsingSelector:@selector(compare:)]] ;
-            _tabView.tableHeaderView = nil;
             [_tabView reloadData];
         }
         
@@ -136,11 +141,8 @@
         [_keys removeAllObjects];
         [_arrayCitys removeAllObjects];
         [self getCityDatas];
-        _tabView.tableHeaderView = _tableHeaderView;
         [_tabView reloadData];
     }
-    
-    
 }
 NSInteger cityNameSort(id str1, id str2, void *context)
 {
@@ -160,6 +162,18 @@ NSInteger cityNameSort(id str1, id str2, void *context)
             [_arrayCitys addObject:cityName];//获取所有城市
         }
     }
+}
+
+- (void)reset {
+    _citys = nil;
+    _searchText.text = nil;
+    [_keys removeAllObjects];
+    [_arrayCitys removeAllObjects];
+    [self getCityDatas];
+    [_tabView reloadData];
+    [_but setTitle:@"搜索" forState:UIControlStateNormal];
+    [_searchText resignFirstResponder];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -244,6 +258,10 @@ NSInteger cityNameSort(id str1, id str2, void *context)
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
+    return YES;
+}
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    [_but setTitle:@"取消" forState:UIControlStateNormal];
     return YES;
 }
 @end

@@ -48,7 +48,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT - 60) style:  UITableViewStylePlain];
+    _tabView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT - 160) style:  UITableViewStylePlain];
     _tabView.delegate    = self;
     _tabView.dataSource  = self;
     [self.view addSubview:_tabView];
