@@ -12,7 +12,7 @@
 @implementation WPRuqestData
 
 - (void)requestHttpDataURL:(NSString *)requestURLString complete:(void(^)(NSDictionary *dic)) complete{
-    _requestDataArray = [[NSMutableArray alloc] init];
+    
     NSURL *requestURL = [NSURL URLWithString:requestURLString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestURL];
     [request setHTTPMethod:@"GET"];
@@ -27,12 +27,12 @@
         [[XCHudHelper sharedInstance] hideHud];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [[XCHudHelper sharedInstance] showHudOnWindow:@"查询中" image:nil acitivity:YES autoHideTime:2];
-        [self performSelector:@selector(requst) withObject:self afterDelay:2];
+        [self performSelector:@selector(requstFailure) withObject:self afterDelay:2];
     }];
     [[NSOperationQueue mainQueue] addOperation:op];
 }
 
-- (void)requst {
+- (void)requstFailure {
 
     [[XCHudHelper sharedInstance] showHudOnWindow:@"网路连接失败" image:nil acitivity:YES autoHideTime:2];
 }

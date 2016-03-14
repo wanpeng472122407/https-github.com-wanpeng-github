@@ -34,8 +34,15 @@
         _trainTypeArray = [[NSMutableArray alloc] init];
         _fromAddress = @"北京";
         _toAddress   = @"深圳";
+        
+        
     }
     return self;
+}
+
+- (void)cancel {
+    [self hideHotCityView];
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -63,6 +70,7 @@
 }
 
 - (void) showHotCityView {
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
     _hotCityView.typeStr = self.selectTepy;
     [UIView animateWithDuration:0.2 animations:^{
         _hotCityView.frame = CGRectMake(0, HEIGHT-300, WIDTH, 300);
@@ -70,6 +78,8 @@
 }
 
 - (void) hideHotCityView {
+    
+    self.navigationItem.rightBarButtonItem = nil;
     [UIView animateWithDuration:0.2 animations:^{
         _hotCityView.frame = CGRectMake(0, HEIGHT, WIDTH, 300);
     }];
@@ -217,7 +227,7 @@
         
     } else if (indexPath.section == 2 && indexPath.row == 0){
 
-        UILabel *label = [self addLabel:CGRectMake(5, 5, 80, 30) stringInfo:@"出发时间" fontInfo:14];
+        UILabel *label = [self addLabel:CGRectMake(5, 5, 80, 30) stringInfo:@"出发时间:" fontInfo:14];
         label.textAlignment = NSTextAlignmentRight;
         [cell.contentView addSubview:label];
         
@@ -253,7 +263,7 @@
     if (sender.tag == 1001 && sender.selected == NO) {
         
         sender.selected = YES;
-        sender.backgroundColor = [UIColor redColor];
+        sender.backgroundColor = [UIColor yellowColor];
         
         for (int i = 1; i<6; i++) {
             UIButton* btn = [self.view viewWithTag:1001+i];
@@ -277,7 +287,7 @@
     } else if (sender.tag != 1001 && sender.selected == NO) {
         
         sender.selected = YES;
-        sender.backgroundColor = [UIColor redColor];
+        sender.backgroundColor = [UIColor yellowColor];
         UIButton *bt = [self.view viewWithTag:1001];
         bt.selected = NO;
         bt.backgroundColor = [UIColor whiteColor];

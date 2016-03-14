@@ -115,7 +115,7 @@
         [arr3 addObject:jsonData.ticketPrice];
     }
     for (int b=0; b<arr.count; b++) {
-        cell.seat1.text=[NSString stringWithFormat:@"%@:%@",arr[0],arr2[0]];
+        cell.seat1.text=[NSString stringWithFormat:@"%@:%@张",arr[0],arr2[0]];
         cell.seat1Price.text = [NSString stringWithFormat:@"价格:%@",arr3[0]];
 
         if (cell.seatArr.count==1) {
@@ -126,7 +126,7 @@
             cell.totalTicketNumber.text = [NSString stringWithFormat:@"余(%@张)",arr2[0]];
             break;
         }
-        cell.seat2.text=[NSString stringWithFormat:@"%@:%@",arr[1],arr2[1]];
+        cell.seat2.text=[NSString stringWithFormat:@"%@:%@张",arr[1],arr2[1]];
         cell.seat2Price.text = [NSString stringWithFormat:@"价格:%@",arr3[1]];
 
         if (cell.seatArr.count==2) {
@@ -138,14 +138,14 @@
             cell.seat3Price.text = nil;
             break;
         }
-        cell.seat3.text=[NSString stringWithFormat:@"%@:%@",arr[2],arr2[2]];
+        cell.seat3.text=[NSString stringWithFormat:@"%@:%@张",arr[2],arr2[2]];
         cell.seat3Price.text = [NSString stringWithFormat:@"价格:%@",arr3[2]];
 
         NSInteger i = [arr2[0] integerValue];
         NSInteger j = [arr2[1] integerValue];
         NSInteger m = [arr2[2] integerValue];
         NSInteger n = i+j+m;
-//        cell.totalTicketNumber.text = [NSString stringWithFormat:@"余(%li 张)",n];
+        cell.totalTicketNumber.text = [NSString stringWithFormat:@"余(%li 张)",n];
 
     }
     return cell;
