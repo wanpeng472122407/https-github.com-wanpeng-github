@@ -7,15 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C941416060FE6F69E3405EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10EA7775C1DAF8F54A6F0688 /* libPods.a */; };
 		BE91A9C91C91A1F4000E06A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91A9C81C91A1F4000E06A4 /* main.m */; };
 		BE91A9CC1C91A1F4000E06A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91A9CB1C91A1F4000E06A4 /* AppDelegate.m */; };
 		BE91A9CF1C91A1F4000E06A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91A9CE1C91A1F4000E06A4 /* ViewController.m */; };
 		BE91A9D21C91A1F4000E06A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE91A9D01C91A1F4000E06A4 /* Main.storyboard */; };
 		BE91A9D41C91A1F4000E06A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE91A9D31C91A1F4000E06A4 /* Assets.xcassets */; };
 		BE91A9D71C91A1F4000E06A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE91A9D51C91A1F4000E06A4 /* LaunchScreen.storyboard */; };
+		BE91A9E21C91A21B000E06A4 /* WPDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91A9DF1C91A21B000E06A4 /* WPDataModel.m */; };
+		BE91A9E31C91A21B000E06A4 /* WPReslutViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91A9E11C91A21B000E06A4 /* WPReslutViewCell.m */; };
+		BE91A9E51C91A23A000E06A4 /* WPReslutViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE91A9E41C91A23A000E06A4 /* WPReslutViewCell.xib */; };
+		BE91A9FA1C91AC4D000E06A4 /* CalendarHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91A9EE1C91AC4C000E06A4 /* CalendarHomeViewController.m */; };
+		BE91A9FB1C91AC4D000E06A4 /* CalendarLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91A9F01C91AC4C000E06A4 /* CalendarLogic.m */; };
+		BE91A9FC1C91AC4D000E06A4 /* CalendarMonthCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91A9F21C91AC4C000E06A4 /* CalendarMonthCollectionViewLayout.m */; };
+		BE91A9FD1C91AC4D000E06A4 /* CalendarMonthHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91A9F41C91AC4C000E06A4 /* CalendarMonthHeaderView.m */; };
+		BE91A9FE1C91AC4D000E06A4 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91A9F61C91AC4C000E06A4 /* CalendarViewController.m */; };
+		BE91A9FF1C91AC4D000E06A4 /* NSDate+WQCalendarLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91A9F91C91AC4C000E06A4 /* NSDate+WQCalendarLogic.m */; };
+		BE91AA061C91AD5D000E06A4 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE91AA011C91AD5D000E06A4 /* MBProgressHUD.bundle */; };
+		BE91AA071C91AD5D000E06A4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA031C91AD5D000E06A4 /* MBProgressHUD.m */; };
+		BE91AA081C91AD5D000E06A4 /* XCHudHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA051C91AD5D000E06A4 /* XCHudHelper.m */; };
+		BE91AA0B1C91AE07000E06A4 /* CalendarDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA0A1C91AE07000E06A4 /* CalendarDayModel.m */; };
+		BE91AA0E1C91AE77000E06A4 /* CalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA0D1C91AE77000E06A4 /* CalendarDayCell.m */; };
+		BE91AA111C91C51D000E06A4 /* WPReslutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA101C91C51D000E06A4 /* WPReslutViewController.m */; };
+		BE91AA131C91CD27000E06A4 /* chack.png in Resources */ = {isa = PBXBuildFile; fileRef = BE91AA121C91CD27000E06A4 /* chack.png */; };
+		BE91AA161C925E9F000E06A4 /* WPRuqestData.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA151C925E9F000E06A4 /* WPRuqestData.m */; };
+		BE91AA191C92C3FE000E06A4 /* WPHotCityView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA181C92C3FE000E06A4 /* WPHotCityView.m */; };
+		BE91AA1C1C92F321000E06A4 /* WPHotCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA1B1C92F321000E06A4 /* WPHotCityViewController.m */; };
+		BE91AA1E1C9302EE000E06A4 /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE91AA1D1C9302EE000E06A4 /* citydict.plist */; };
+		BE91AA321C930D98000E06A4 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA221C930D98000E06A4 /* ChineseInclude.m */; };
+		BE91AA331C930D98000E06A4 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA241C930D98000E06A4 /* ChineseToPinyinResource.m */; };
+		BE91AA341C930D98000E06A4 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA261C930D98000E06A4 /* HanyuPinyinOutputFormat.m */; };
+		BE91AA351C930D98000E06A4 /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA281C930D98000E06A4 /* NSString+PinYin4Cocoa.m */; };
+		BE91AA361C930D98000E06A4 /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA2A1C930D98000E06A4 /* PinyinFormatter.m */; };
+		BE91AA371C930D98000E06A4 /* PinYinForObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA2C1C930D98000E06A4 /* PinYinForObjc.m */; };
+		BE91AA381C930D98000E06A4 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA2E1C930D98000E06A4 /* PinyinHelper.m */; };
+		BE91AA391C930D98000E06A4 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE91AA2F1C930D98000E06A4 /* unicode_to_hanyu_pinyin.txt */; };
+		BE91AA3A1C930D98000E06A4 /* ZYPinYinSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91AA311C930D98000E06A4 /* ZYPinYinSearch.m */; };
+		BE91AA3C1C932131000E06A4 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE91AA3B1C932131000E06A4 /* bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10EA7775C1DAF8F54A6F0688 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4C34A0DB5103929827BEE6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BE91A9C41C91A1F4000E06A4 /* WPTrainTicker2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPTrainTicker2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE91A9C81C91A1F4000E06A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE91A9CA1C91A1F4000E06A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +59,62 @@
 		BE91A9D31C91A1F4000E06A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE91A9D61C91A1F4000E06A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE91A9D81C91A1F4000E06A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE91A9DE1C91A21B000E06A4 /* WPDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPDataModel.h; sourceTree = "<group>"; };
+		BE91A9DF1C91A21B000E06A4 /* WPDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPDataModel.m; sourceTree = "<group>"; };
+		BE91A9E01C91A21B000E06A4 /* WPReslutViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPReslutViewCell.h; sourceTree = "<group>"; };
+		BE91A9E11C91A21B000E06A4 /* WPReslutViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPReslutViewCell.m; sourceTree = "<group>"; };
+		BE91A9E41C91A23A000E06A4 /* WPReslutViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WPReslutViewCell.xib; sourceTree = "<group>"; };
+		BE91A9ED1C91AC4C000E06A4 /* CalendarHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarHomeViewController.h; sourceTree = "<group>"; };
+		BE91A9EE1C91AC4C000E06A4 /* CalendarHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarHomeViewController.m; sourceTree = "<group>"; };
+		BE91A9EF1C91AC4C000E06A4 /* CalendarLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarLogic.h; sourceTree = "<group>"; };
+		BE91A9F01C91AC4C000E06A4 /* CalendarLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarLogic.m; sourceTree = "<group>"; };
+		BE91A9F11C91AC4C000E06A4 /* CalendarMonthCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarMonthCollectionViewLayout.h; sourceTree = "<group>"; };
+		BE91A9F21C91AC4C000E06A4 /* CalendarMonthCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarMonthCollectionViewLayout.m; sourceTree = "<group>"; };
+		BE91A9F31C91AC4C000E06A4 /* CalendarMonthHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarMonthHeaderView.h; sourceTree = "<group>"; };
+		BE91A9F41C91AC4C000E06A4 /* CalendarMonthHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarMonthHeaderView.m; sourceTree = "<group>"; };
+		BE91A9F51C91AC4C000E06A4 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		BE91A9F61C91AC4C000E06A4 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		BE91A9F71C91AC4C000E06A4 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		BE91A9F81C91AC4C000E06A4 /* NSDate+WQCalendarLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+WQCalendarLogic.h"; sourceTree = "<group>"; };
+		BE91A9F91C91AC4C000E06A4 /* NSDate+WQCalendarLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WQCalendarLogic.m"; sourceTree = "<group>"; };
+		BE91AA011C91AD5D000E06A4 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		BE91AA021C91AD5D000E06A4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		BE91AA031C91AD5D000E06A4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		BE91AA041C91AD5D000E06A4 /* XCHudHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCHudHelper.h; sourceTree = "<group>"; };
+		BE91AA051C91AD5D000E06A4 /* XCHudHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCHudHelper.m; sourceTree = "<group>"; };
+		BE91AA091C91AE07000E06A4 /* CalendarDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDayModel.h; sourceTree = "<group>"; };
+		BE91AA0A1C91AE07000E06A4 /* CalendarDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDayModel.m; sourceTree = "<group>"; };
+		BE91AA0C1C91AE77000E06A4 /* CalendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDayCell.h; sourceTree = "<group>"; };
+		BE91AA0D1C91AE77000E06A4 /* CalendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDayCell.m; sourceTree = "<group>"; };
+		BE91AA0F1C91C51D000E06A4 /* WPReslutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPReslutViewController.h; sourceTree = "<group>"; };
+		BE91AA101C91C51D000E06A4 /* WPReslutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPReslutViewController.m; sourceTree = "<group>"; };
+		BE91AA121C91CD27000E06A4 /* chack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chack.png; sourceTree = "<group>"; };
+		BE91AA141C925E9F000E06A4 /* WPRuqestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPRuqestData.h; sourceTree = "<group>"; };
+		BE91AA151C925E9F000E06A4 /* WPRuqestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPRuqestData.m; sourceTree = "<group>"; };
+		BE91AA171C92C3FE000E06A4 /* WPHotCityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHotCityView.h; sourceTree = "<group>"; };
+		BE91AA181C92C3FE000E06A4 /* WPHotCityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHotCityView.m; sourceTree = "<group>"; };
+		BE91AA1A1C92F321000E06A4 /* WPHotCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHotCityViewController.h; sourceTree = "<group>"; };
+		BE91AA1B1C92F321000E06A4 /* WPHotCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHotCityViewController.m; sourceTree = "<group>"; };
+		BE91AA1D1C9302EE000E06A4 /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
+		BE91AA211C930D98000E06A4 /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseInclude.h; sourceTree = "<group>"; };
+		BE91AA221C930D98000E06A4 /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseInclude.m; sourceTree = "<group>"; };
+		BE91AA231C930D98000E06A4 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		BE91AA241C930D98000E06A4 /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		BE91AA251C930D98000E06A4 /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		BE91AA261C930D98000E06A4 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		BE91AA271C930D98000E06A4 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		BE91AA281C930D98000E06A4 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		BE91AA291C930D98000E06A4 /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinFormatter.h; sourceTree = "<group>"; };
+		BE91AA2A1C930D98000E06A4 /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinFormatter.m; sourceTree = "<group>"; };
+		BE91AA2B1C930D98000E06A4 /* PinYinForObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYinForObjc.h; sourceTree = "<group>"; };
+		BE91AA2C1C930D98000E06A4 /* PinYinForObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinYinForObjc.m; sourceTree = "<group>"; };
+		BE91AA2D1C930D98000E06A4 /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
+		BE91AA2E1C930D98000E06A4 /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
+		BE91AA2F1C930D98000E06A4 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		BE91AA301C930D98000E06A4 /* ZYPinYinSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPinYinSearch.h; sourceTree = "<group>"; };
+		BE91AA311C930D98000E06A4 /* ZYPinYinSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPinYinSearch.m; sourceTree = "<group>"; };
+		BE91AA3B1C932131000E06A4 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "Assets.xcassets/bg@2x.png"; sourceTree = "<group>"; };
+		C431DBC18E963215A8F6808A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +122,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C941416060FE6F69E3405EF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352F9521331C479C5DDA9F81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B4C34A0DB5103929827BEE6 /* Pods.debug.xcconfig */,
+				C431DBC18E963215A8F6808A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3766FE46B8CD540597E2E326 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10EA7775C1DAF8F54A6F0688 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE91A9BB1C91A1F4000E06A4 = {
 			isa = PBXGroup;
 			children = (
 				BE91A9C61C91A1F4000E06A4 /* WPTrainTicker2.0 */,
 				BE91A9C51C91A1F4000E06A4 /* Products */,
+				352F9521331C479C5DDA9F81 /* Pods */,
+				3766FE46B8CD540597E2E326 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +167,32 @@
 		BE91A9C61C91A1F4000E06A4 /* WPTrainTicker2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				BE91AA201C930CD7000E06A4 /* ZYPinYinSearchLib */,
+				BE91AA001C91ACAB000E06A4 /* TBHudHelper */,
+				BE91A9EC1C91AB5D000E06A4 /* ZFCalendar */,
 				BE91A9CA1C91A1F4000E06A4 /* AppDelegate.h */,
 				BE91A9CB1C91A1F4000E06A4 /* AppDelegate.m */,
 				BE91A9CD1C91A1F4000E06A4 /* ViewController.h */,
 				BE91A9CE1C91A1F4000E06A4 /* ViewController.m */,
 				BE91A9D01C91A1F4000E06A4 /* Main.storyboard */,
+				BE91A9DE1C91A21B000E06A4 /* WPDataModel.h */,
+				BE91A9DF1C91A21B000E06A4 /* WPDataModel.m */,
+				BE91AA141C925E9F000E06A4 /* WPRuqestData.h */,
+				BE91AA151C925E9F000E06A4 /* WPRuqestData.m */,
+				BE91AA0F1C91C51D000E06A4 /* WPReslutViewController.h */,
+				BE91AA101C91C51D000E06A4 /* WPReslutViewController.m */,
+				BE91A9E01C91A21B000E06A4 /* WPReslutViewCell.h */,
+				BE91A9E11C91A21B000E06A4 /* WPReslutViewCell.m */,
+				BE91A9E41C91A23A000E06A4 /* WPReslutViewCell.xib */,
+				BE91AA171C92C3FE000E06A4 /* WPHotCityView.h */,
+				BE91AA181C92C3FE000E06A4 /* WPHotCityView.m */,
+				BE91AA1A1C92F321000E06A4 /* WPHotCityViewController.h */,
+				BE91AA1B1C92F321000E06A4 /* WPHotCityViewController.m */,
 				BE91A9D31C91A1F4000E06A4 /* Assets.xcassets */,
+				BE91AA3B1C932131000E06A4 /* bg@2x.png */,
 				BE91A9D51C91A1F4000E06A4 /* LaunchScreen.storyboard */,
 				BE91A9D81C91A1F4000E06A4 /* Info.plist */,
+				BE91AA1D1C9302EE000E06A4 /* citydict.plist */,
 				BE91A9C71C91A1F4000E06A4 /* Supporting Files */,
 			);
 			path = WPTrainTicker2.0;
@@ -79,6 +206,67 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BE91A9EC1C91AB5D000E06A4 /* ZFCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				BE91AA121C91CD27000E06A4 /* chack.png */,
+				BE91AA0C1C91AE77000E06A4 /* CalendarDayCell.h */,
+				BE91AA0D1C91AE77000E06A4 /* CalendarDayCell.m */,
+				BE91AA091C91AE07000E06A4 /* CalendarDayModel.h */,
+				BE91AA0A1C91AE07000E06A4 /* CalendarDayModel.m */,
+				BE91A9ED1C91AC4C000E06A4 /* CalendarHomeViewController.h */,
+				BE91A9EE1C91AC4C000E06A4 /* CalendarHomeViewController.m */,
+				BE91A9EF1C91AC4C000E06A4 /* CalendarLogic.h */,
+				BE91A9F01C91AC4C000E06A4 /* CalendarLogic.m */,
+				BE91A9F11C91AC4C000E06A4 /* CalendarMonthCollectionViewLayout.h */,
+				BE91A9F21C91AC4C000E06A4 /* CalendarMonthCollectionViewLayout.m */,
+				BE91A9F31C91AC4C000E06A4 /* CalendarMonthHeaderView.h */,
+				BE91A9F41C91AC4C000E06A4 /* CalendarMonthHeaderView.m */,
+				BE91A9F51C91AC4C000E06A4 /* CalendarViewController.h */,
+				BE91A9F61C91AC4C000E06A4 /* CalendarViewController.m */,
+				BE91A9F71C91AC4C000E06A4 /* Color.h */,
+				BE91A9F81C91AC4C000E06A4 /* NSDate+WQCalendarLogic.h */,
+				BE91A9F91C91AC4C000E06A4 /* NSDate+WQCalendarLogic.m */,
+			);
+			name = ZFCalendar;
+			sourceTree = "<group>";
+		};
+		BE91AA001C91ACAB000E06A4 /* TBHudHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BE91AA011C91AD5D000E06A4 /* MBProgressHUD.bundle */,
+				BE91AA021C91AD5D000E06A4 /* MBProgressHUD.h */,
+				BE91AA031C91AD5D000E06A4 /* MBProgressHUD.m */,
+				BE91AA041C91AD5D000E06A4 /* XCHudHelper.h */,
+				BE91AA051C91AD5D000E06A4 /* XCHudHelper.m */,
+			);
+			name = TBHudHelper;
+			sourceTree = "<group>";
+		};
+		BE91AA201C930CD7000E06A4 /* ZYPinYinSearchLib */ = {
+			isa = PBXGroup;
+			children = (
+				BE91AA211C930D98000E06A4 /* ChineseInclude.h */,
+				BE91AA221C930D98000E06A4 /* ChineseInclude.m */,
+				BE91AA231C930D98000E06A4 /* ChineseToPinyinResource.h */,
+				BE91AA241C930D98000E06A4 /* ChineseToPinyinResource.m */,
+				BE91AA251C930D98000E06A4 /* HanyuPinyinOutputFormat.h */,
+				BE91AA261C930D98000E06A4 /* HanyuPinyinOutputFormat.m */,
+				BE91AA271C930D98000E06A4 /* NSString+PinYin4Cocoa.h */,
+				BE91AA281C930D98000E06A4 /* NSString+PinYin4Cocoa.m */,
+				BE91AA291C930D98000E06A4 /* PinyinFormatter.h */,
+				BE91AA2A1C930D98000E06A4 /* PinyinFormatter.m */,
+				BE91AA2B1C930D98000E06A4 /* PinYinForObjc.h */,
+				BE91AA2C1C930D98000E06A4 /* PinYinForObjc.m */,
+				BE91AA2D1C930D98000E06A4 /* PinyinHelper.h */,
+				BE91AA2E1C930D98000E06A4 /* PinyinHelper.m */,
+				BE91AA2F1C930D98000E06A4 /* unicode_to_hanyu_pinyin.txt */,
+				BE91AA301C930D98000E06A4 /* ZYPinYinSearch.h */,
+				BE91AA311C930D98000E06A4 /* ZYPinYinSearch.m */,
+			);
+			name = ZYPinYinSearchLib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE91A9DB1C91A1F4000E06A4 /* Build configuration list for PBXNativeTarget "WPTrainTicker2.0" */;
 			buildPhases = (
+				D40683866942BCA07C17BC36 /* Check Pods Manifest.lock */,
 				BE91A9C01C91A1F4000E06A4 /* Sources */,
 				BE91A9C11C91A1F4000E06A4 /* Frameworks */,
 				BE91A9C21C91A1F4000E06A4 /* Resources */,
+				2552F4B46145388B05B6C8FD /* Embed Pods Frameworks */,
+				D4F83D9A29991DC7A210F1BE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,7 +301,6 @@
 				TargetAttributes = {
 					BE91A9C31C91A1F4000E06A4 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = RH3LN679Y8;
 					};
 				};
 			};
@@ -137,13 +327,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE91AA3C1C932131000E06A4 /* bg@2x.png in Resources */,
+				BE91AA131C91CD27000E06A4 /* chack.png in Resources */,
 				BE91A9D71C91A1F4000E06A4 /* LaunchScreen.storyboard in Resources */,
 				BE91A9D41C91A1F4000E06A4 /* Assets.xcassets in Resources */,
+				BE91AA061C91AD5D000E06A4 /* MBProgressHUD.bundle in Resources */,
+				BE91AA391C930D98000E06A4 /* unicode_to_hanyu_pinyin.txt in Resources */,
+				BE91A9E51C91A23A000E06A4 /* WPReslutViewCell.xib in Resources */,
 				BE91A9D21C91A1F4000E06A4 /* Main.storyboard in Resources */,
+				BE91AA1E1C9302EE000E06A4 /* citydict.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2552F4B46145388B05B6C8FD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D40683866942BCA07C17BC36 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4F83D9A29991DC7A210F1BE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE91A9C01C91A1F4000E06A4 /* Sources */ = {
@@ -151,8 +395,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE91A9CF1C91A1F4000E06A4 /* ViewController.m in Sources */,
+				BE91A9FB1C91AC4D000E06A4 /* CalendarLogic.m in Sources */,
+				BE91AA0B1C91AE07000E06A4 /* CalendarDayModel.m in Sources */,
+				BE91A9E31C91A21B000E06A4 /* WPReslutViewCell.m in Sources */,
+				BE91A9FC1C91AC4D000E06A4 /* CalendarMonthCollectionViewLayout.m in Sources */,
 				BE91A9CC1C91A1F4000E06A4 /* AppDelegate.m in Sources */,
+				BE91AA351C930D98000E06A4 /* NSString+PinYin4Cocoa.m in Sources */,
+				BE91AA361C930D98000E06A4 /* PinyinFormatter.m in Sources */,
+				BE91AA341C930D98000E06A4 /* HanyuPinyinOutputFormat.m in Sources */,
+				BE91AA161C925E9F000E06A4 /* WPRuqestData.m in Sources */,
+				BE91AA1C1C92F321000E06A4 /* WPHotCityViewController.m in Sources */,
+				BE91AA371C930D98000E06A4 /* PinYinForObjc.m in Sources */,
+				BE91AA381C930D98000E06A4 /* PinyinHelper.m in Sources */,
+				BE91A9E21C91A21B000E06A4 /* WPDataModel.m in Sources */,
+				BE91AA081C91AD5D000E06A4 /* XCHudHelper.m in Sources */,
+				BE91AA3A1C930D98000E06A4 /* ZYPinYinSearch.m in Sources */,
+				BE91AA111C91C51D000E06A4 /* WPReslutViewController.m in Sources */,
 				BE91A9C91C91A1F4000E06A4 /* main.m in Sources */,
+				BE91AA071C91AD5D000E06A4 /* MBProgressHUD.m in Sources */,
+				BE91AA191C92C3FE000E06A4 /* WPHotCityView.m in Sources */,
+				BE91A9FD1C91AC4D000E06A4 /* CalendarMonthHeaderView.m in Sources */,
+				BE91AA0E1C91AE77000E06A4 /* CalendarDayCell.m in Sources */,
+				BE91A9FF1C91AC4D000E06A4 /* NSDate+WQCalendarLogic.m in Sources */,
+				BE91A9FE1C91AC4D000E06A4 /* CalendarViewController.m in Sources */,
+				BE91AA321C930D98000E06A4 /* ChineseInclude.m in Sources */,
+				BE91A9FA1C91AC4D000E06A4 /* CalendarHomeViewController.m in Sources */,
+				BE91AA331C930D98000E06A4 /* ChineseToPinyinResource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +528,10 @@
 		};
 		BE91A9DC1C91A1F4000E06A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B4C34A0DB5103929827BEE6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WPTrainTicker2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yibeio.WPTrainTicker2-0";
@@ -271,8 +541,10 @@
 		};
 		BE91A9DD1C91A1F4000E06A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C431DBC18E963215A8F6808A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WPTrainTicker2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yibeio.WPTrainTicker2-0";
@@ -299,6 +571,7 @@
 				BE91A9DD1C91A1F4000E06A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

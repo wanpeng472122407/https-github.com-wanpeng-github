@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,UITextFieldDelegate>
 
+@property (nonatomic, strong) NSString        *strTime;
+@property (nonatomic, strong) NSMutableArray  *trainTypeArray;
+@property (nonatomic, strong) NSString        *fromAddress;
+@property (nonatomic, strong) NSString        *toAddress;
+@property (nonatomic, strong) NSString        *dateString;
 
 @end
 
