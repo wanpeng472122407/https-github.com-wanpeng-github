@@ -144,6 +144,9 @@
         __weak ViewController *weakSelf = self;
         dateView.calendarblock = ^(CalendarDayModel *model){
             weakSelf.dateString=[model toString];//返回选择的对象
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf.tabView reloadData];
+            });
         };
 
         [self.navigationController pushViewController:dateView animated:YES];

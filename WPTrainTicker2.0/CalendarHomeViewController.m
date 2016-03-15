@@ -112,7 +112,6 @@
 
 - (void)setCalendartitle:(NSString *)calendartitle
 {
-
     [self.navigationItem setTitle:calendartitle];
 
 }
